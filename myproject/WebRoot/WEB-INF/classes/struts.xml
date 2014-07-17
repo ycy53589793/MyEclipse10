@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 编码   -->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!-- 服务端订单管理模块 -->
+	<include file="com/order/struts-order.xml"></include>
+	<!-- 服务端角色管理模块 -->
+	<include file="com/role/struts-role.xml"></include>
+	<!-- 服务端用户管理模块 -->
+	<include file="com/user/struts-user.xml"></include>
+	<!-- 物流订单管理查询action
+	<package name="app" extends="struts-default">
+		<action name="popWinAction" class="com.common.temple.pop.action.PopWinAction" method="execute">
+			<result name="success">/template/theme/popWin.jsp</result>
+			<result name="query_success">/template/theme/popResult.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="loadQueryConfigurationPage_*" class="com.common.data.action.QueryConfigurationAction" method="{1}">
+			<result name="success">/common/data/query/query_configuration.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="loadQueryModulePage_*" class="com.common.data.action.QueryGroupAction" method="{1}">
+			<result name="success">/common/data/result/module_result.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="loadQueryFieldPage_*" class="com.common.data.action.QueryFieldAction" method="{1}">
+			<result name="success">/common/data/result/field_result.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package> -->
+</struts>
